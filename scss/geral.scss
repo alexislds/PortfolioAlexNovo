@@ -1,0 +1,7 @@
+@import 'utilitarios';
+
+.limite{
+  @include desktop{height:100%; margin:0 auto; max-width:1000px; overflow:hidden; width:100%;}
+  @include monitor{height:100%; margin:0 auto; max-width:1400px; overflow:hidden; width:100%;}
+  @include ultrawide{height:100%; margin:0 auto; max-width:1600px; overflow:hidden; width:100%;}
+}

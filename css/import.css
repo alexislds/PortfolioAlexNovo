@@ -1,0 +1,338 @@
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1921px) {
+  .limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+.header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(85, 113, 168, 0.5);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Ubuntu", sans-serif;
+  height: 70px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header-menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header-menu-item {
+  float: left;
+}
+
+.header-menu-link {
+  display: inline-block;
+  font-size: 18px;
+  font-variant: small-caps;
+  padding: 5px 10px 10px;
+  text-transform: lowercase;
+}
+
+.header-logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-sociais {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header-sociais-item {
+  float: right;
+  height: 25px;
+  position: relative;
+  width: 25px;
+}
+
+.header-sociais-svg {
+  fill: white;
+  height: 100%;
+  width: 100%;
+}
+
+.header-sociais-link {
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.header-sociais-item:not(:first-of-type) {
+  margin-right: 15px;
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+.intro {
+  background: url(../img/fundo1.jpg) no-repeat center/cover;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.intro-limite {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro-texto {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+.works {
+  background-color: #665FAC;
+  height: 100vh;
+  padding: 70px 0;
+  width: 100%;
+}
+
+.works-limite {
+  background: green;
+}
+
+.works-lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.works-lista-item {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 25%;
+  position: relative;
+  width: 33.33%;
+}
+
+.works-lista-birden {
+  background-image: url(../img/birden.jpg);
+}
+
+.works-lista-hoover {
+  background-image: url(../img/hoover.jpg);
+}
+
+.works-lista-jessica {
+  background-image: url(../img/jessica.jpg);
+}
+
+.works-lista-oneda {
+  background-image: url(../img/oneda.jpg);
+}
+
+.works-lista-renovo {
+  background-image: url(../img/renovo.jpg);
+}
+
+.works-lista-xica {
+  background-image: url(../img/xica.jpg);
+}
+
+.works-lista-stella {
+  background-image: url(../img/stella.jpg);
+}
+
+.works-lista-veyron {
+  background-image: url(../img/veyron.jpg);
+}
+
+.works-lista-starsup {
+  background-image: url(../img/starsup.jpg);
+}
+
+.works-lista-pactus {
+  background-image: url(../img/pactus.jpg);
+}
+
+.works-lista-nieva {
+  background-image: url(../img/nieva.jpg);
+}
+
+.works-lista-gbox {
+  background-image: url(../img/gbox.jpg);
+}
+
+.works-lista-link {
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.works-lista-etiqueta {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(85, 113, 168, 0.6);
+  bottom: -20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 20%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 0;
+  opacity: 0;
+  padding: 0 1vw;
+  position: absolute;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  width: 100%;
+}
+
+.works-lista-link:hover .works-lista-etiqueta {
+  bottom: 0;
+  opacity: 1;
+}
+
+.works-lista-etiqueta-texto {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  color: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}

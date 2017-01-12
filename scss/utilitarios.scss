@@ -1,0 +1,75 @@
+
+/* Variaveis */
+
+$fonteA:'Lato', sans-serif;
+$fonteB:'Ubuntu', sans-serif;
+$corA: #6534ff;
+$corB: #62bcfa;
+$corC: #fccdd3;
+$corD: #bbc4ef;
+$smartphone-width:640px;
+$tablet-width:1024px;
+$desktop-width:1440px;
+$monitor-width:1920px;
+
+
+
+/* Mixins */
+
+@mixin mascara {
+  display:inline-block; height:100%; left:0; position:absolute; top:0; width:100%;
+}
+
+@mixin efeitoCrescer {
+  box-shadow: 0 20px 20px -20px rgba(0, 0, 0, 1); transform: scale(1.2);
+}
+
+
+
+/* Media Querys */
+
+@mixin smartphone-tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-monitor-ultrawide {
+  @media (min-width: #{$tablet-width} + 1) {
+    @content;
+  }
+}
+
+@mixin smartphone {
+  @media (max-width: #{$smartphone-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$smartphone-width + 1}) and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$tablet-width + 1}) and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin monitor {
+  @media (min-width: #{$desktop-width + 1}) and (max-width: #{$monitor-width}) {
+    @content;
+  }
+}
+
+@mixin ultrawide {
+  @media (min-width: #{$monitor-width + 1}) {
+    @content;
+  }
+}
+
+/* Configs fixas */
+
+// img {height:auto !important; max-width:100%; width:auto;}

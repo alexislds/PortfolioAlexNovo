@@ -1,0 +1,28 @@
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+.intro {
+  background: url(../img/fundo1.jpg) no-repeat center/cover;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.intro-limite {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro-texto {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+}

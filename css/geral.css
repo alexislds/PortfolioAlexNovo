@@ -1,0 +1,33 @@
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1000px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1921px) {
+  .limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1600px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
