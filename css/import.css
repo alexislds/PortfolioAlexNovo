@@ -32,117 +32,162 @@
   }
 }
 
+body {
+  background-color: #fafafa;
+}
+
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
-.header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(85, 113, 168, 0.5);
-  color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-family: "Ubuntu", sans-serif;
-  height: 70px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px 60px;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
-.header-menu {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.header-menu-item {
-  float: left;
-}
-
-.header-menu-link {
-  display: inline-block;
-  font-size: 18px;
-  font-variant: small-caps;
-  padding: 5px 10px 10px;
-  text-transform: lowercase;
-}
-
-.header-logo {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  font-size: 20px;
-  font-variant: small-caps;
-  font-weight: bold;
-  text-align: center;
-}
-
-.header-sociais {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.header-sociais-item {
-  float: right;
-  height: 25px;
-  position: relative;
-  width: 25px;
-}
-
-.header-sociais-svg {
-  fill: white;
-  height: 100%;
-  width: 100%;
-}
-
-.header-sociais-link {
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.header-sociais-item:not(:first-of-type) {
-  margin-right: 15px;
-}
-
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
 .intro {
-  background: url(../img/fundo1.jpg) no-repeat center/cover;
+  background-color: #ff8071;
+  width: 100vw;
   height: 100vh;
-  text-align: center;
-  width: 100%;
-}
-
-.intro-limite {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.intro-texto {
+.intro-div1 {
+  display: none;
+  width: 100vw;
+  height: 790px;
+  background-color: red;
+}
+
+.intro-div1-titulos {
+  margin: 97px;
   color: white;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 40px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Lato", sans-serif;
+}
+
+.intro-div1-titulo1 {
+  font-weight: 500;
+}
+
+.intro-div1-titulo2 {
+  font-size: 47px;
+}
+
+.intro-div1-paragrafo {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.intro-div2 {
+  display: none;
+  width: 100vw;
+  height: 790px;
+  background-color: #0EB29A;
+}
+
+.intro-div2-titulos {
+  margin: 97px;
+  color: white;
+  text-align: center;
+  line-height: 47px;
+  font-family: "Lato", sans-serif;
+}
+
+.intro-div2-titulo1 {
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  font-size: 47px;
+  padding-bottom: 10px;
+}
+
+.intro-div2-paragrafo1 {
+  font-size: 21px;
+}
+
+.intro-div2-paragrafo2 {
+  font-size: 21px;
+}
+
+.intro-div3 {
+  display: none;
+  width: 100vw;
+  height: 790px;
+  background-color: #3e454d;
+}
+
+.intro-div3-titulos {
+  margin: 97px;
+  color: white;
+  text-align: center;
+  line-height: 47px;
+  font-family: "Lato", sans-serif;
+}
+
+.intro-div3-titulo1 {
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  font-size: 47px;
+  padding-bottom: 20px;
+}
+
+.intro-div3-item {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.intro-div4 {
+  width: 100vw;
+  height: 790px;
+  background-color: #9ab7c2;
+}
+
+.intro-div4-titulos {
+  margin: 97px;
+  color: white;
+  text-align: center;
+  line-height: 47px;
+  font-family: "Lato", sans-serif;
+}
+
+.intro-div4-titulo1 {
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  font-size: 47px;
+  padding-bottom: 10px;
+}
+
+.intro-div4-paragrafo {
+  padding-bottom: 30px;
+}
+
+.intro-div4-link {
+  color: #b6483d;
+}
+
+.intro-div4-botao {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #b6483d;
+  border: none;
+  color: white;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.intro-div4-botao:hover {
+  background-color: transparent;
+  border: 1px solid black;
 }
 
 /* Variaveis */
@@ -150,123 +195,109 @@
 /* Media Querys */
 /* Configs fixas */
 .works {
-  background-color: #665FAC;
-  height: 100vh;
-  padding: 70px 0;
+  background-color: white;
+  display: inline-block;
+  padding: 50px 0;
   width: 100%;
 }
 
-.works-limite {
-  background: green;
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .works-limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 816px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .works-limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1224px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1921px) {
+  .works-limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1632px;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .works-lista {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
 .works-lista-item {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #F0F1F3;
+  border: 1px solid #E9ECEF;
+  border-radius: 5px 5px 3px 3px;
   display: inline-block;
-  height: 25%;
+  height: 235px;
+  margin: 20px;
+  padding: 24px 5px 5px;
   position: relative;
-  width: 33.33%;
-}
-
-.works-lista-birden {
-  background-image: url(../img/birden.jpg);
-}
-
-.works-lista-hoover {
-  background-image: url(../img/hoover.jpg);
-}
-
-.works-lista-jessica {
-  background-image: url(../img/jessica.jpg);
-}
-
-.works-lista-oneda {
-  background-image: url(../img/oneda.jpg);
-}
-
-.works-lista-renovo {
-  background-image: url(../img/renovo.jpg);
-}
-
-.works-lista-xica {
-  background-image: url(../img/xica.jpg);
-}
-
-.works-lista-stella {
-  background-image: url(../img/stella.jpg);
-}
-
-.works-lista-veyron {
-  background-image: url(../img/veyron.jpg);
-}
-
-.works-lista-starsup {
-  background-image: url(../img/starsup.jpg);
-}
-
-.works-lista-pactus {
-  background-image: url(../img/pactus.jpg);
-}
-
-.works-lista-nieva {
-  background-image: url(../img/nieva.jpg);
-}
-
-.works-lista-gbox {
-  background-image: url(../img/gbox.jpg);
+  width: 368px;
 }
 
 .works-lista-link {
   display: inline-block;
   height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
 }
 
-.works-lista-etiqueta {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(85, 113, 168, 0.6);
-  bottom: -20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 20%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  left: 0;
-  opacity: 0;
-  padding: 0 1vw;
-  position: absolute;
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
+.works-lista-img {
+  height: 100%;
   width: 100%;
 }
 
-.works-lista-link:hover .works-lista-etiqueta {
-  bottom: 0;
-  opacity: 1;
+.works-lista-janela-menu {
+  display: inline-block;
+  left: 9px;
+  position: absolute;
+  top: 3px;
 }
 
-.works-lista-etiqueta-texto {
-  color: white;
-  font-family: "Ubuntu", sans-serif;
+.works-lista-janela-btn {
+  border-radius: 50%;
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+}
+
+.works-lista-janela-btn:not(:first-of-type) {
+  margin-left: 3px;
+}
+
+.works-lista-janela-fechar {
+  background-color: #fb535f;
+}
+
+.works-lista-janela-minimizar {
+  background-color: #fdce64;
+}
+
+.works-lista-janela-maximizar {
+  background-color: #9ce275;
 }
 
 /* Variaveis */

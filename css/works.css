@@ -3,121 +3,107 @@
 /* Media Querys */
 /* Configs fixas */
 .works {
-  background-color: #665FAC;
-  height: 100vh;
-  padding: 70px 0;
+  background-color: white;
+  display: inline-block;
+  padding: 50px 0;
   width: 100%;
 }
 
-.works-limite {
-  background: green;
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .works-limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 816px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1920px) {
+  .works-limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1224px;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1921px) {
+  .works-limite {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 1632px;
+    overflow: hidden;
+    width: 100%;
+  }
 }
 
 .works-lista {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
 .works-lista-item {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #F0F1F3;
+  border: 1px solid #E9ECEF;
+  border-radius: 5px 5px 3px 3px;
   display: inline-block;
-  height: 25%;
+  height: 235px;
+  margin: 20px;
+  padding: 24px 5px 5px;
   position: relative;
-  width: 33.33%;
-}
-
-.works-lista-birden {
-  background-image: url(../img/birden.jpg);
-}
-
-.works-lista-hoover {
-  background-image: url(../img/hoover.jpg);
-}
-
-.works-lista-jessica {
-  background-image: url(../img/jessica.jpg);
-}
-
-.works-lista-oneda {
-  background-image: url(../img/oneda.jpg);
-}
-
-.works-lista-renovo {
-  background-image: url(../img/renovo.jpg);
-}
-
-.works-lista-xica {
-  background-image: url(../img/xica.jpg);
-}
-
-.works-lista-stella {
-  background-image: url(../img/stella.jpg);
-}
-
-.works-lista-veyron {
-  background-image: url(../img/veyron.jpg);
-}
-
-.works-lista-starsup {
-  background-image: url(../img/starsup.jpg);
-}
-
-.works-lista-pactus {
-  background-image: url(../img/pactus.jpg);
-}
-
-.works-lista-nieva {
-  background-image: url(../img/nieva.jpg);
-}
-
-.works-lista-gbox {
-  background-image: url(../img/gbox.jpg);
+  width: 368px;
 }
 
 .works-lista-link {
   display: inline-block;
   height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
 }
 
-.works-lista-etiqueta {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: rgba(85, 113, 168, 0.6);
-  bottom: -20%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 20%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  left: 0;
-  opacity: 0;
-  padding: 0 1vw;
-  position: absolute;
-  -webkit-transition: all 400ms;
-  transition: all 400ms;
+.works-lista-img {
+  height: 100%;
   width: 100%;
 }
 
-.works-lista-link:hover .works-lista-etiqueta {
-  bottom: 0;
-  opacity: 1;
+.works-lista-janela-menu {
+  display: inline-block;
+  left: 9px;
+  position: absolute;
+  top: 3px;
 }
 
-.works-lista-etiqueta-texto {
-  color: white;
-  font-family: "Ubuntu", sans-serif;
+.works-lista-janela-btn {
+  border-radius: 50%;
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+}
+
+.works-lista-janela-btn:not(:first-of-type) {
+  margin-left: 3px;
+}
+
+.works-lista-janela-fechar {
+  background-color: #fb535f;
+}
+
+.works-lista-janela-minimizar {
+  background-color: #fdce64;
+}
+
+.works-lista-janela-maximizar {
+  background-color: #9ce275;
 }

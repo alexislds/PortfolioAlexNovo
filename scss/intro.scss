@@ -1,4 +1,71 @@
 @import 'utilitarios';
 
-.intro{
+.intro{background-color: #ff8071; width:100vw; height:100vh; display: flex; align-items: center; flex-direction: column; 
+   
+&-div1{  
+    
+   display: none;         
+    
+   width: 100vw; height: 790px; background-color: red;
+    
+   &-titulos{margin: 97px; color: white; text-align:center; line-height: 50px; font-family: $fonteA;} 
+    
+   &-titulo1{font-weight: 500;}    
+    
+   &-titulo2{font-size:47px;}
+    
+   &-paragrafo{ text-align: center; font-family: $fonteA;}
+}    
+    
+&-div2{ 
+    
+    display: none;
+    
+    width:100vw; height:790px; background-color:#0EB29A;
+    
+    &-titulos{margin: 97px; color:white; text-align: center; line-height:47px; font-family: $fonteA;} 
+    
+    &-titulo1{font-weight: 500; font-family: $fonteA; font-size:47px; padding-bottom: 10px;}  
+    
+    &-paragrafo1{font-size:21px;}
+    
+    &-paragrafo2{font-size:21px;}
+    
+    }    
+
+&-div3{ 
+        
+   display: none;    
+        
+    width:100vw; height:790px; background-color:#3e454d;
+    
+    &-titulos{margin: 97px; color:white; text-align: center; line-height:47px; font-family: $fonteA;} 
+    
+    &-titulo1{font-weight: 500; font-family: $fonteA; font-size:47px; padding-bottom: 20px;}  
+     
+    &-item{display: inline-block; margin-left:30px;} 
+        
+    }  
+    
+    
+&-div4{ 
+    
+    width:100vw; height:790px;  background-color:#9ab7c2;
+    
+    &-titulos{margin: 97px; color:white; text-align: center; line-height:47px; font-family: $fonteA;} 
+    
+    &-titulo1{font-weight: 500; font-family: $fonteA; font-size:47px; padding-bottom: 10px;} 
+    
+    &-paragrafo{padding-bottom: 30px;}
+     
+    &-link{color: #b6483d;}
+    
+    &-botao{border-radius: 50%; width: 100px; height: 100px; background-color:#b6483d;  border: none; color: white; transition: background-color 1s;}
+    
+    &-botao:hover{background-color: transparent; border: 1px solid black; }
+        
+    }      
+
+    
+    
 }
