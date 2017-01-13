@@ -70,11 +70,43 @@
 .works-lista-link {
   display: inline-block;
   height: 100%;
+  position: relative;
   width: 100%;
 }
 
-.works-lista-img {
+.works-lista-link::after {
+  background: -webkit-linear-gradient(top, rgba(73, 78, 107, 0.2), rgba(73, 78, 107, 0.2)), -webkit-linear-gradient(rgba(25, 34, 49, 0.2), rgba(25, 34, 49, 0.2)), -webkit-linear-gradient(rgba(152, 94, 109, 0.2), rgba(152, 94, 109, 0.2)), -webkit-linear-gradient(rgba(152, 135, 143, 0.2), rgba(152, 135, 143, 0.2));
+  background: linear-gradient(to bottom, rgba(73, 78, 107, 0.2), rgba(73, 78, 107, 0.2)), linear-gradient(rgba(25, 34, 49, 0.2), rgba(25, 34, 49, 0.2)), linear-gradient(rgba(152, 94, 109, 0.2), rgba(152, 94, 109, 0.2)), linear-gradient(rgba(152, 135, 143, 0.2), rgba(152, 135, 143, 0.2));
+  background-position: left top, left bottom, left center, right center;
+  background-repeat: no-repeat;
+  background-size: 100% 0%, 100% 0%, 0% 100%, 0% 100%;
+  content: '';
   height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.works-lista-link:hover::after {
+  background-size: 100% 100%;
+  -webkit-transition: background-size 700ms 200ms;
+  transition: background-size 700ms 200ms;
+}
+
+.works-lista-link:hover .works-lista-img {
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.works-lista-img {
+  -webkit-filter: initial;
+          filter: initial;
+  height: 100%;
+  -webkit-transition: -webkit-filter 500ms;
+  transition: -webkit-filter 500ms;
+  transition: filter 500ms;
+  transition: filter 500ms, -webkit-filter 500ms;
   width: 100%;
 }
 
@@ -86,7 +118,7 @@
 }
 
 .works-lista-janela-btn {
-  border-radius: 50%;
+  border-radius: 100%;
   display: inline-block;
   height: 7px;
   width: 7px;
@@ -106,4 +138,42 @@
 
 .works-lista-janela-maximizar {
   background-color: #9ce275;
+}
+
+.works-lista-detalhes {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  left: 0;
+  opacity: 0;
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.works-lista-detalhes-texto {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.works-lista-link:hover .works-lista-detalhes {
+  opacity: 1;
+  -webkit-transition: opacity 500ms 700ms;
+  transition: opacity 500ms 700ms;
 }
