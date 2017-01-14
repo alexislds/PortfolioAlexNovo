@@ -17,3 +17,6 @@
 .efeito-trabalho-alvo-a{transform:translateX(50px);}
 .efeito-trabalho-alvo-b{transform:translateX(-50px);}
 .efeitoTrabalhoAtivo   {transform:translateX(0); opacity:1;}
+
+.efeito-habilidades-alvo{opacity:0; transform:scale(0.5); transition:all 1s cubic-bezier(0.250, 0.250, 0.230, 1.405);}
+.efeitoHabilidadesAtivo {transform:scale(1); opacity:1;}

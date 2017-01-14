@@ -1,11 +1,12 @@
 efeitoIntro();
 
 function efeitoIntro(){
-  var $intro        = document.querySelector('.intro');
-  var $introDiv     = $intro.querySelectorAll('.intro-div');
-  var $sobreAlvo    = $intro.querySelectorAll('.efeito-sobre-alvo');
-  var $trabalhoAlvo = $intro.querySelectorAll('.efeito-trabalho-alvo');
-  var turno         = 0;
+  var $intro           = document.querySelector('.intro');
+  var $introDiv        = $intro.querySelectorAll('.intro-div');
+  var $sobreAlvo       = $intro.querySelectorAll('.efeito-sobre-alvo');
+  var $trabalhoAlvo    = $intro.querySelectorAll('.efeito-trabalho-alvo');
+  var $habilidadesAlvo = $intro.querySelectorAll('.efeito-habilidades-alvo');
+  var turno            = 0;
 
   comportamentoBackground($intro, turno);
   comportamentoDiv($introDiv, turno);
@@ -17,6 +18,7 @@ function efeitoIntro(){
     comportamentoBackground($intro, turno);
     comportamentoDiv($introDiv, turno);
     comportamentoTrabalho($trabalhoAlvo, turno);
+    comportamentoHabilidas($habilidadesAlvo, turno);
 
     if (turno == 4){
       clearInterval(intervalAnimacao);
@@ -74,7 +76,6 @@ function comportamentoSobre(alvo, turno){
       alvo[target].classList.add('efeitoSobreAtivo');
       target++;
 
-      console.log(target);
       if(target == alvo.length) {
         clearInterval(intervalSobre);
       }
@@ -89,10 +90,23 @@ function comportamentoTrabalho(alvo, turno){
       alvo[target].classList.add('efeitoTrabalhoAtivo');
       target++;
 
-      console.log(target);
       if(target == alvo.length) {
         clearInterval(intervalSobre);
       }
     },500);
+  }
+}
+function comportamentoHabilidas(alvo, turno){
+  if (turno == 2) {
+    var target = 0;
+
+    var intervalSobre = setInterval(function(){
+      alvo[target].classList.add('efeitoHabilidadesAtivo');
+      target++;
+
+      if(target == alvo.length) {
+        clearInterval(intervalSobre);
+      }
+    },1500/(alvo.length-1));
   }
 }
