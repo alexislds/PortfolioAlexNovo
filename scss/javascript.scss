@@ -12,3 +12,8 @@
 
 .efeito-sobre-alvo{transform:translateY(50px); opacity:0; transition:all 1s;}
 .efeitoSobreAtivo {transform:translateY(0); opacity:1;}
+
+.efeito-trabalho-alvo  {opacity:0; transition:all 1s;}
+.efeito-trabalho-alvo-a{transform:translateX(50px);}
+.efeito-trabalho-alvo-b{transform:translateX(-50px);}
+.efeitoTrabalhoAtivo   {transform:translateX(0); opacity:1;}

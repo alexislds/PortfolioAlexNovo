@@ -39,3 +39,25 @@
           transform: translateY(0);
   opacity: 1;
 }
+
+.efeito-trabalho-alvo {
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.efeito-trabalho-alvo-a {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+}
+
+.efeito-trabalho-alvo-b {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.efeitoTrabalhoAtivo {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}

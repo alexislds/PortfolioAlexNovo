@@ -1,21 +1,22 @@
 efeitoIntro();
 
 function efeitoIntro(){
-  var $intro      = document.querySelector('.intro');
-  var $introDiv   = $intro.querySelectorAll('.intro-div');
-  var $sobreAlvo = $intro.querySelectorAll('.efeito-sobre-alvo');
-  var turno       = 0;
+  var $intro        = document.querySelector('.intro');
+  var $introDiv     = $intro.querySelectorAll('.intro-div');
+  var $sobreAlvo    = $intro.querySelectorAll('.efeito-sobre-alvo');
+  var $trabalhoAlvo = $intro.querySelectorAll('.efeito-trabalho-alvo');
+  var turno         = 0;
 
   comportamentoBackground($intro, turno);
   comportamentoDiv($introDiv, turno);
-  comportamentoConteudo($sobreAlvo, turno);
+  comportamentoSobre($sobreAlvo, turno);
 
 
   var intervalAnimacao = setInterval(function(){
     turno++;
     comportamentoBackground($intro, turno);
     comportamentoDiv($introDiv, turno);
-    comportamentoConteudo($sobreAlvo, turno);
+    comportamentoTrabalho($trabalhoAlvo, turno);
 
     if (turno == 4){
       clearInterval(intervalAnimacao);
@@ -65,33 +66,33 @@ function comportamentoDiv(alvo, turno){
       break;
   }
 }
-function comportamentoConteudo(alvo, turno){
-  switch (turno) {
-    case 0:
-      console.log(turno);
-      var target = 0;
+function comportamentoSobre(alvo, turno){
+  if (turno == 0) {
+    var target = 0;
 
-      var intervalSobre = setInterval(function(){
-        alvo[target].classList.add('efeitoSobreAtivo');
-        target++;
+    var intervalSobre = setInterval(function(){
+      alvo[target].classList.add('efeitoSobreAtivo');
+      target++;
 
-        console.log(target);
-        if(target == alvo.length) {
-          clearInterval(intervalSobre);
-        }
-      },500);
-      break;
-    case 1:
-      console.log(turno);
-      break;
-    case 2:
-      console.log(turno);
-      break;
-    case 3:
-      console.log(turno);
-      break;
-    default:
-      console.log(turno);
-      break;
+      console.log(target);
+      if(target == alvo.length) {
+        clearInterval(intervalSobre);
+      }
+    },500);
+  }
+}
+function comportamentoTrabalho(alvo, turno){
+  if (turno == 1) {
+    var target = 0;
+
+    var intervalSobre = setInterval(function(){
+      alvo[target].classList.add('efeitoTrabalhoAtivo');
+      target++;
+
+      console.log(target);
+      if(target == alvo.length) {
+        clearInterval(intervalSobre);
+      }
+    },500);
   }
 }
