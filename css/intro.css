@@ -103,33 +103,49 @@
   width: 7px;
 }
 
-.intro-contato {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 .intro-contato-header-texto-2 {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
-.intro-contato-btn {
-  background-color: #b6483d;
-  border: 1px solid transparent;
-  border-radius: 50%;
-  color: white;
-  height: 100px;
-  margin-top: 40px;
-  text-align: center;
-  -webkit-transition: background-color 1s;
-  transition: background-color 1s;
-  width: 100px;
+.intro-contato-header-texto-3 {
+  color: #e05848;
+  margin-top: 20px;
 }
 
-.intro-contato-btn:hover {
-  background-color: transparent;
-  border: 1px solid black;
+.intro-contato-header-lista {
+  margin-top: 30px;
+}
+
+.intro-contato-header-item {
+  display: inline-block;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.intro-contato-header-item:not(:first-of-type) {
+  margin-left: 16px;
+}
+
+.intro-contato-header-svg {
+  fill: white;
+  height: 100%;
+  -webkit-transition: fill 300ms;
+  transition: fill 300ms;
+  width: 100%;
+}
+
+.intro-contato-header-item:hover .intro-contato-header-svg {
+  fill: rgba(224, 88, 72, 0.5);
+}
+
+.intro-contato-header-link {
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 @-webkit-keyframes barra {

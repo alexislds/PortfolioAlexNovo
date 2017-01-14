@@ -75,3 +75,30 @@
           transform: scale(1);
   opacity: 1;
 }
+
+.efeito-contato-alvo {
+  opacity: 0;
+  -webkit-transition: all 1s cubic-bezier(0.25, 0.25, 0.23, 1.405);
+  transition: all 1s cubic-bezier(0.25, 0.25, 0.23, 1.405);
+}
+
+.efeito-contato-alvo-a {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.efeito-contato-alvo-b {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+.efeito-contato-alvo-c {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.efeitoContatoAtivo {
+  -webkit-transform: translateY(0) scale(1);
+          transform: translateY(0) scale(1);
+  opacity: 1;
+}

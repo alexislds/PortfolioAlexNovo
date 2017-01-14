@@ -6,6 +6,7 @@ function efeitoIntro(){
   var $sobreAlvo       = $intro.querySelectorAll('.efeito-sobre-alvo');
   var $trabalhoAlvo    = $intro.querySelectorAll('.efeito-trabalho-alvo');
   var $habilidadesAlvo = $intro.querySelectorAll('.efeito-habilidades-alvo');
+  var $contatoAlvo     = $intro.querySelectorAll('.efeito-contato-alvo');
   var turno            = 0;
 
   comportamentoBackground($intro, turno);
@@ -19,6 +20,7 @@ function efeitoIntro(){
     comportamentoDiv($introDiv, turno);
     comportamentoTrabalho($trabalhoAlvo, turno);
     comportamentoHabilidas($habilidadesAlvo, turno);
+    comportamentoContato($contatoAlvo, turno);
 
     if (turno == 4){
       clearInterval(intervalAnimacao);
@@ -102,6 +104,20 @@ function comportamentoHabilidas(alvo, turno){
 
     var intervalSobre = setInterval(function(){
       alvo[target].classList.add('efeitoHabilidadesAtivo');
+      target++;
+
+      if(target == alvo.length) {
+        clearInterval(intervalSobre);
+      }
+    },1500/(alvo.length-1));
+  }
+}
+function comportamentoContato(alvo, turno){
+  if (turno == 3) {
+    var target = 0;
+
+    var intervalSobre = setInterval(function(){
+      alvo[target].classList.add('efeitoContatoAtivo');
       target++;
 
       if(target == alvo.length) {

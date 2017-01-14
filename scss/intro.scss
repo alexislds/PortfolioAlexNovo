@@ -46,15 +46,18 @@
 
 
   &-contato{
-    flex-direction:column;
-
     &-header{
       &-texto-1{}
-      &-texto-2{margin-top:40px;}
-    }
+      &-texto-2{margin-top:50px;}
+      &-texto-3{color:#e05848; margin-top:20px;}
 
-    &-btn      {background-color:#b6483d; border:1px solid transparent; border-radius:50%; color:white; height:100px; margin-top:40px; text-align:center; transition:background-color 1s; width:100px;}
-    &-btn:hover{background-color:transparent; border:1px solid black; }
+      &-lista                   {margin-top:30px;}
+      &-item                    {display:inline-block; height:40px; position:relative; width:40px;}
+      &-item:not(:first-of-type){margin-left:16px;}
+      &-svg                     {fill:white; height:100%; transition:fill 300ms; width:100%;}
+      &-item:hover &-svg        {fill:rgba(#e05848, .5);}
+      &-link                    {@include mascara;}
+    }
   }
 }
 

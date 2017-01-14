@@ -20,3 +20,9 @@
 
 .efeito-habilidades-alvo{opacity:0; transform:scale(0.5); transition:all 1s cubic-bezier(0.250, 0.250, 0.230, 1.405);}
 .efeitoHabilidadesAtivo {transform:scale(1); opacity:1;}
+
+.efeito-contato-alvo  {opacity:0; transition:all 1s cubic-bezier(0.250, 0.250, 0.230, 1.405);}
+.efeito-contato-alvo-a{transform:translateY(-50px);}
+.efeito-contato-alvo-b{transform:scale(0.5);}
+.efeito-contato-alvo-c{transform:translateY(50px);}
+.efeitoContatoAtivo   {transform:translateY(0) scale(1); opacity:1;}
