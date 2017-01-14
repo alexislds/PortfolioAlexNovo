@@ -1,12 +1,13 @@
 @import 'utilitarios';
 
 .intro{
-  align-items:center; background-color:$corA; color:white; display:flex; flex-direction:column; font-family:$fonteC; height:100vh; width:100%;
+  align-items:center; color:white; display:flex; flex-direction:column; font-family:$fonteC; height:100vh; position:relative; transition:background-color 1s; width:100%;
 
   h1{font-size:3.3vw;}
   h2{font-size:3vw;}
   p{font-size:1.4vw;}
 
+  &-barra{animation:barra 5s 3 linear; background-color:white; height:3px; left:0; position:absolute; top:0;}
 
   &-sobre,
   &-trabalho,
@@ -18,8 +19,6 @@
   }
 
   &-sobre{
-    display:none;
-
     &-header{
       &-texto-1{}
       &-texto-2{margin-top:40px;}
@@ -28,8 +27,6 @@
   }
 
   &-trabalho{
-    display:none;
-
     &-header{
       &-texto-1{}
       &-texto-2{margin-top:40px;}
@@ -38,8 +35,6 @@
   }
 
   &-habilidades{
-    display:none;
-
     &-header{
       &-texto-1{}
       &-lista{margin-top:45px;}
@@ -51,7 +46,7 @@
 
 
   &-contato{
-    display:none; flex-direction:column;
+    flex-direction:column;
 
     &-header{
       &-texto-1{}
@@ -60,5 +55,15 @@
 
     &-btn      {background-color:#b6483d; border:1px solid transparent; border-radius:50%; color:white; height:100px; margin-top:40px; text-align:center; transition:background-color 1s; width:100px;}
     &-btn:hover{background-color:transparent; border:1px solid black; }
+  }
+}
+
+@keyframes barra {
+  from{
+    width:0%;
+  }
+
+  to{
+    width:100%;
   }
 }

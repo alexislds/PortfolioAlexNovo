@@ -6,7 +6,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #494E6B;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,6 +16,9 @@
           flex-direction: column;
   font-family: "Raleway", sans-serif;
   height: 100vh;
+  position: relative;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
   width: 100%;
 }
 
@@ -30,6 +32,16 @@
 
 .intro p {
   font-size: 1.4vw;
+}
+
+.intro-barra {
+  -webkit-animation: barra 5s 3 linear;
+          animation: barra 5s 3 linear;
+  background-color: white;
+  height: 3px;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 .intro-sobre, .intro-trabalho, .intro-habilidades, .intro-contato {
@@ -49,10 +61,6 @@
   display: inline-block;
 }
 
-.intro-sobre {
-  display: none;
-}
-
 .intro-sobre-header-texto-2 {
   margin-top: 40px;
 }
@@ -61,20 +69,12 @@
   margin-top: 40px;
 }
 
-.intro-trabalho {
-  display: none;
-}
-
 .intro-trabalho-header-texto-2 {
   margin-top: 40px;
 }
 
 .intro-trabalho-header-texto-3 {
   margin-top: 30px;
-}
-
-.intro-habilidades {
-  display: none;
 }
 
 .intro-habilidades-header-lista {
@@ -104,7 +104,6 @@
 }
 
 .intro-contato {
-  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -131,4 +130,22 @@
 .intro-contato-btn:hover {
   background-color: transparent;
   border: 1px solid black;
+}
+
+@-webkit-keyframes barra {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes barra {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
 }
