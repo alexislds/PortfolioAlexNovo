@@ -1,17 +1,21 @@
 efeitoIntro();
 
 function efeitoIntro(){
-  var $intro    = document.querySelector('.intro');
-  var $introDiv = $intro.querySelectorAll('.intro-div');
-  var turno     = 0;
+  var $intro      = document.querySelector('.intro');
+  var $introDiv   = $intro.querySelectorAll('.intro-div');
+  var $sobreAlvo = $intro.querySelectorAll('.efeito-sobre-alvo');
+  var turno       = 0;
+
   comportamentoBackground($intro, turno);
   comportamentoDiv($introDiv, turno);
+  comportamentoConteudo($sobreAlvo, turno);
 
 
   var intervalAnimacao = setInterval(function(){
     turno++;
     comportamentoBackground($intro, turno);
     comportamentoDiv($introDiv, turno);
+    comportamentoConteudo($sobreAlvo, turno);
 
     if (turno == 4){
       clearInterval(intervalAnimacao);
@@ -43,23 +47,48 @@ function comportamentoBackground(alvo, turno){
 function comportamentoDiv(alvo, turno){
   switch (turno) {
     case 0:
-      console.log(turno);
       alvo[turno].classList.remove('efeitoDiv');
       break;
     case 1:
-      console.log(turno);
       alvo[turno - 1].classList.add('efeitoDiv');
       alvo[turno].classList.remove('efeitoDiv');
       break;
     case 2:
-      console.log(turno);
       alvo[turno - 1].classList.add('efeitoDiv');
       alvo[turno].classList.remove('efeitoDiv');
       break;
     case 3:
-      console.log(turno);
       alvo[turno - 1].classList.add('efeitoDiv');
       alvo[turno].classList.remove('efeitoDiv');
+      break;
+    default:
+      break;
+  }
+}
+function comportamentoConteudo(alvo, turno){
+  switch (turno) {
+    case 0:
+      console.log(turno);
+      var target = 0;
+
+      var intervalSobre = setInterval(function(){
+        alvo[target].classList.add('efeitoSobreAtivo');
+        target++;
+
+        console.log(target);
+        if(target == alvo.length) {
+          clearInterval(intervalSobre);
+        }
+      },500);
+      break;
+    case 1:
+      console.log(turno);
+      break;
+    case 2:
+      console.log(turno);
+      break;
+    case 3:
+      console.log(turno);
       break;
     default:
       console.log(turno);
