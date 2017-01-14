@@ -376,9 +376,12 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   left: 0;
+  opacity: 0;
   padding: 0 20px;
   position: absolute;
   text-transform: lowercase;
+  -webkit-transition: opacity 1s 500ms;
+  transition: opacity 1s 500ms;
   width: 100%;
   z-index: 1;
 }
@@ -387,6 +390,10 @@ body {
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
+.efeitoFooter {
+  opacity: 1;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
