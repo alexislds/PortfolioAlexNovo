@@ -190,7 +190,7 @@ body {
   .works-limite {
     height: 100%;
     margin: 0 auto;
-    max-width: 816px;
+    max-width: 884px;
     overflow: hidden;
     width: 100%;
   }
@@ -200,7 +200,7 @@ body {
   .works-limite {
     height: 100%;
     margin: 0 auto;
-    max-width: 1224px;
+    max-width: 1326px;
     overflow: hidden;
     width: 100%;
   }
@@ -210,7 +210,7 @@ body {
   .works-limite {
     height: 100%;
     margin: 0 auto;
-    max-width: 1632px;
+    max-width: 1768px;
     overflow: hidden;
     width: 100%;
   }
@@ -241,7 +241,7 @@ body {
   margin: 20px;
   padding: 24px 5px 5px;
   position: relative;
-  width: 368px;
+  width: 402px;
 }
 
 .works-lista-link {
