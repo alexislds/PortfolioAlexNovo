@@ -1,0 +1,22 @@
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+.skills {
+  display: inline-block;
+  height: 100vh;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.skills-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  text-align: center;
+}

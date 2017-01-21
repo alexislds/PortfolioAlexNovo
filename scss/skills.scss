@@ -1,0 +1,7 @@
+@import 'utilitarios';
+
+.skills{
+  display:inline-block; height:100vh; padding:50px 0; width:100%;
+
+  &-header{display:flex; flex-direction:column; margin-bottom:30px; text-align:center;}
+}
