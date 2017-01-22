@@ -9,6 +9,84 @@
   width: 100%;
 }
 
+.skills-limite {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills-lista {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+.skills-lista-item {
+  display: inline-block;
+  height: 100%;
+}
+
+.skills-lista-barra {
+  background: -webkit-linear-gradient(bottom, #068000, #5cb85c), -webkit-linear-gradient(bottom, #dedede 80%, transparent);
+  background: linear-gradient(to top, #068000, #5cb85c), linear-gradient(to top, #dedede 80%, transparent);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 80% 0, 1px 100%;
+  height: 90%;
+  margin: 0 auto;
+  -webkit-transition: background-size 300ms;
+  transition: background-size 300ms;
+  width: 50px;
+}
+
+.skills-lista-item-ativo:nth-child(1) .skills-lista-barra {
+  background-size: 80% 80%, 1px 100%;
+}
+
+.skills-lista-item-ativo:nth-child(2) .skills-lista-barra {
+  background-size: 80% 70%, 1px 100%;
+}
+
+.skills-lista-item-ativo:nth-child(3) .skills-lista-barra {
+  background-size: 80% 70%, 1px 100%;
+}
+
+.skills-lista-item-ativo:nth-child(4) .skills-lista-barra {
+  background-size: 80% 60%, 1px 100%;
+}
+
+.skills-lista-item-ativo:nth-child(5) .skills-lista-barra {
+  background-size: 80% 60%, 1px 100%;
+}
+
+.skills-lista-item-ativo:nth-child(6) .skills-lista-barra {
+  background-size: 80% 100%, 1px 100%;
+}
+
+.skills-lista-item-ativo:nth-child(7) .skills-lista-barra {
+  background-size: 80% 100%, 1px 100%;
+}
+
+.skills-lista-texto {
+  background: -webkit-linear-gradient(right, transparent, #ddd, #ddd, transparent) no-repeat center top/100% 1px;
+  background: linear-gradient(to left, transparent, #ddd, #ddd, transparent) no-repeat center top/100% 1px;
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+  padding-top: 11px;
+  text-align: center;
+}
+
 .skills-header {
   display: -webkit-box;
   display: -ms-flexbox;
