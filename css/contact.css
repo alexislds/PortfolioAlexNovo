@@ -1,0 +1,118 @@
+/* Variaveis */
+/* Mixins */
+/* Media Querys */
+/* Configs fixas */
+.contact {
+  display: inline-block;
+  height: 100vh;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.contact-limite {
+  background: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contact-formulario {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Lato", sans-serif;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-formulario-nome, .contact-formulario-email, .contact-formulario-mensagem, .contact-formulario-btn {
+  background-color: #fefefe;
+  border: 1px solid #e9e9e9;
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+}
+
+.contact-formulario-campos, .contact-formulario-mensagem, .contact-formulario-btn {
+  max-width: 70%;
+  width: 70%;
+}
+
+.contact-formulario-nome, .contact-formulario-email {
+  width: 45%;
+}
+
+.contact-formulario-nome {
+  float: left;
+}
+
+.contact-formulario-email {
+  float: right;
+}
+
+.contact-formulario-mensagem {
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+
+.contact-formulario-btn {
+  margin-top: 20px;
+}
+
+.contact-lista {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.contact-lista-item {
+  display: inline-block;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.contact-lista-item:not(:first-of-type) {
+  margin-left: 10px;
+}
+
+.contact-lista-link {
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.contact-lista-svg {
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  fill: #fefefe;
+}

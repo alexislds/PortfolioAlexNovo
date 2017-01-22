@@ -1,0 +1,44 @@
+@import 'utilitarios';
+
+.contact{
+  display:inline-block; height:100vh; padding:50px 0; width:100%;
+
+  &-limite{background:#fafafa; display:flex; flex-direction:column;}
+
+  &-header{display:flex; flex-direction:column; margin-bottom:30px; text-align:center;}
+
+  &-formulario{
+    align-items:center; display:flex; flex-direction:column; font-family:$fonteA; justify-content:space-between;
+
+    &-campos{}
+
+    &-nome,
+    &-email,
+    &-mensagem,
+    &-btn{background-color:$branco; border:1px solid #e9e9e9; font-family:$fonteA; padding:10px;}
+
+    &-campos,
+    &-mensagem,
+    &-btn{max-width:70%; width:70%;}
+
+    &-nome,
+    &-email{width:45%;}
+
+    &-nome{float:left;}
+    &-email{float:right;}
+
+
+    &-mensagem{box-sizing:border-box; margin-top:20px;}
+    &-btn{margin-top:20px;}
+  }
+
+  &-lista{
+    margin-top:30px; text-align:center;
+
+    &-item                    {display:inline-block; height:40px; position:relative; width:40px;}
+    &-item:not(:first-of-type){margin-left:10px;}
+
+    &-link{@include mascara;}
+    &-svg{@include mascara; fill:$branco;}
+  }
+}
