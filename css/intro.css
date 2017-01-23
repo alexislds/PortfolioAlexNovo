@@ -25,7 +25,7 @@
 }
 
 .intro h1 {
-  font-size: 3.3vw;
+  font-size: 3vw;
 }
 
 .intro h2 {
@@ -46,6 +46,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.intro-header .invisivel {
+  display: none;
 }
 
 .intro-header-texto, .intro-header-barra {
