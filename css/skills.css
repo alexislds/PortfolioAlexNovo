@@ -80,6 +80,7 @@
 .skills-lista-texto {
   background: -webkit-linear-gradient(right, transparent, #ddd, #ddd, transparent) no-repeat center top/100% 1px;
   background: linear-gradient(to left, transparent, #ddd, #ddd, transparent) no-repeat center top/100% 1px;
+  color: #111111;
   font-family: "Lato", sans-serif;
   font-weight: normal;
   letter-spacing: 1px;

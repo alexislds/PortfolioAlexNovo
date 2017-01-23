@@ -1,9 +1,9 @@
 @import 'utilitarios';
 
 .contact{
-  display:inline-block; height:100vh; padding:50px 0; width:100%;
+  background-color:$corC; height:100vh; padding:50px 0; width:100%;
 
-  &-limite{background:#fafafa; display:flex; flex-direction:column;}
+  &-limite{display:flex; flex-direction:column;}
 
   &-header{display:flex; flex-direction:column; margin-bottom:30px; text-align:center;}
 

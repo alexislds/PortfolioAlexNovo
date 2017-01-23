@@ -32,24 +32,43 @@
   }
 }
 
-.titulos,
-.subtitulos {
+.titulos-a,
+.subtitulos-a {
+  color: #111111;
   display: inline-block;
   font-family: "Raleway", sans-serif;
   font-variant: small-caps;
 }
 
-.titulos {
-  background: -webkit-linear-gradient(right, transparent, #ddd, #ddd, transparent) no-repeat center bottom/100px 1px;
-  background: linear-gradient(to left, transparent, #ddd, #ddd, transparent) no-repeat center bottom/100px 1px;
-  color: #111111;
+.titulos-a {
+  background: -webkit-linear-gradient(right, transparent, #111111, #111111, transparent) no-repeat center bottom/100px 1px;
+  background: linear-gradient(to left, transparent, #111111, #111111, transparent) no-repeat center bottom/100px 1px;
   font-size: 1.2vw;
   margin-bottom: 10px;
   padding-bottom: 11px;
 }
 
-.subtitulos {
-  color: #aaa;
+.subtitulo-a {
+  font-size: 0.6vw;
+}
+
+.titulos-b,
+.subtitulos-b {
+  color: #fefefe;
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  font-variant: small-caps;
+}
+
+.titulos-b {
+  background: -webkit-linear-gradient(right, transparent, #fefefe, #fefefe, transparent) no-repeat center bottom/100px 1px;
+  background: linear-gradient(to left, transparent, #fefefe, #fefefe, transparent) no-repeat center bottom/100px 1px;
+  font-size: 1.2vw;
+  margin-bottom: 10px;
+  padding-bottom: 11px;
+}
+
+.subtitulo-b {
   font-size: 0.6vw;
 }
 

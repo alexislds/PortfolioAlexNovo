@@ -6,10 +6,16 @@
   @include ultrawide{height:100%; margin:0 auto; max-width:1600px; overflow:hidden; width:100%;}
 }
 
-.titulos,
-.subtitulos{display:inline-block; font-family:$fonteC; font-variant:small-caps;}
+.titulos-a,
+.subtitulos-a{color:$preto; display:inline-block; font-family:$fonteC; font-variant:small-caps;}
 
-.titulos{background:linear-gradient(to left, transparent, #ddd, #ddd, transparent) no-repeat center bottom / 100px 1px; color:$preto; font-size:1.2vw; margin-bottom:10px; padding-bottom:11px;}
-.subtitulos{color:#aaa; font-size:0.6vw;}
+.titulos-a{background:linear-gradient(to left, transparent, $preto, $preto, transparent) no-repeat center bottom / 100px 1px; font-size:1.2vw; margin-bottom:10px; padding-bottom:11px;}
+.subtitulo-a{font-size:0.6vw;}
+
+.titulos-b,
+.subtitulos-b{color:$branco; display:inline-block; font-family:$fonteC; font-variant:small-caps;}
+
+.titulos-b{background:linear-gradient(to left, transparent, $branco, $branco, transparent) no-repeat center bottom / 100px 1px; font-size:1.2vw; margin-bottom:10px; padding-bottom:11px;}
+.subtitulo-b{font-size:0.6vw;}
 
 body{position:relative;}

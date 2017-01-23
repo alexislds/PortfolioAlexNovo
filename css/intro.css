@@ -6,6 +6,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: -webkit-linear-gradient(45deg, #E14658, #3F3250) no-repeat left top/100% 100%;
+  background: linear-gradient(45deg, #E14658, #3F3250) no-repeat left top/100% 100%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;

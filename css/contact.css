@@ -3,14 +3,13 @@
 /* Media Querys */
 /* Configs fixas */
 .contact {
-  display: inline-block;
+  background-color: #3F3250;
   height: 100vh;
   padding: 50px 0;
   width: 100%;
 }
 
 .contact-limite {
-  background: #fafafa;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

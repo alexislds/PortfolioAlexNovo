@@ -20,7 +20,7 @@
     &-item-ativo:nth-child(6) &-barra{background-size:80% 100%, 1px 100%;}
     &-item-ativo:nth-child(7) &-barra{background-size:80% 100%, 1px 100%;}
 
-    &-texto{background:linear-gradient(to left, transparent, #ddd, #ddd, transparent) no-repeat center top / 100% 1px; font-family:$fonteA; font-weight:normal; letter-spacing:1px; padding-top:11px; text-align:center;}
+    &-texto{background:linear-gradient(to left, transparent, #ddd, #ddd, transparent) no-repeat center top / 100% 1px; color:$preto; font-family:$fonteA; font-weight:normal; letter-spacing:1px; padding-top:11px; text-align:center;}
   }
 
   &-header{display:flex; flex-direction:column; margin-bottom:30px; text-align:center;}
