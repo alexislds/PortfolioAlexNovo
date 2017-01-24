@@ -351,8 +351,15 @@ body {
   display: inline-block;
   height: 235px;
   margin: 20px;
+  opacity: 0;
   padding: 24px 5px 5px;
   position: relative;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: opacity 900ms, -webkit-transform 700ms;
+  transition: opacity 900ms, -webkit-transform 700ms;
+  transition: opacity 900ms, transform 700ms;
+  transition: opacity 900ms, transform 700ms, -webkit-transform 700ms;
   width: 402px;
 }
 
@@ -619,8 +626,13 @@ body {
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
-.efeitoFooter {
+.visivel {
   opacity: 1;
+}
+
+.cresceu {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/

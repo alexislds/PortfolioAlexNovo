@@ -13,16 +13,16 @@ function efeitoFooter(){
   var rolado       = window.pageYOffset;
 
   if (rolado >= precisaRolar) {
-    if ($footer.classList.contains('efeitoFooter')) {
+    if ($footer.classList.contains('visivel')) {
       return;
     }
     else {
-      $footer.classList.add('efeitoFooter');
+      $footer.classList.add('visivel');
     }
   }
   else {
-    if ($footer.classList.contains('efeitoFooter')) {
-      $footer.classList.remove('efeitoFooter');
+    if ($footer.classList.contains('visivel')) {
+      $footer.classList.remove('visivel');
     }
     else {
       return;

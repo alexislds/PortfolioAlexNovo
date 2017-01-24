@@ -2,6 +2,11 @@
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
-.efeitoFooter {
+.visivel {
   opacity: 1;
+}
+
+.cresceu {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
