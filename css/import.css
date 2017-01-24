@@ -107,7 +107,7 @@ body {
 }
 
 .intro h1 {
-  font-size: 3.3vw;
+  font-size: 3vw;
 }
 
 .intro h2 {
@@ -118,17 +118,7 @@ body {
   font-size: 1.4vw;
 }
 
-.intro-barra {
-  -webkit-animation: barra 5s 3 linear;
-          animation: barra 5s 3 linear;
-  background-color: white;
-  height: 3px;
-  left: 0;
-  position: absolute;
-  top: 0;
-}
-
-.intro-sobre, .intro-trabalho, .intro-habilidades, .intro-contato {
+.intro-limite {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -138,115 +128,48 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
 }
 
-.intro-sobre-header, .intro-trabalho-header, .intro-habilidades-header, .intro-contato-header {
+.intro-header .invisivel {
+  display: none;
+}
+
+.intro-header-texto, .intro-header-barra {
   display: inline-block;
 }
 
-.intro-sobre-header-texto-2 {
-  margin-top: 40px;
+.intro-header-barra {
+  -webkit-animation: piscando 900ms infinite;
+          animation: piscando 900ms infinite;
 }
 
-.intro-sobre-header-texto-3 {
-  margin-top: 40px;
-}
-
-.intro-trabalho-header-texto-2 {
-  margin-top: 40px;
-}
-
-.intro-trabalho-header-texto-3 {
-  margin-top: 30px;
-}
-
-.intro-habilidades-header-lista {
-  margin-top: 45px;
-}
-
-.intro-habilidades-header-item {
-  display: inline-block;
-  font-family: "Ubuntu", sans-serif;
-}
-
-.intro-habilidades-header-item:not(:first-of-type) {
-  margin-left: 12px;
-  padding-left: 23px;
-  position: relative;
-}
-
-.intro-habilidades-header-item:not(:first-of-type)::before {
-  background-color: white;
-  border-radius: 50%;
-  content: '';
-  height: 7px;
-  left: 0;
-  position: absolute;
-  top: 4px;
-  width: 7px;
-}
-
-.intro-contato-header-texto-2 {
-  margin-top: 50px;
-}
-
-.intro-contato-header-texto-3 {
-  color: #e05848;
-  margin-top: 20px;
-}
-
-.intro-contato-header-lista {
-  margin-top: 30px;
-}
-
-.intro-contato-header-item {
-  display: inline-block;
-  height: 40px;
-  position: relative;
-  width: 40px;
-}
-
-.intro-contato-header-item:not(:first-of-type) {
-  margin-left: 16px;
-}
-
-.intro-contato-header-svg {
-  fill: white;
-  height: 100%;
-  -webkit-transition: fill 300ms;
-  transition: fill 300ms;
-  width: 100%;
-}
-
-.intro-contato-header-item:hover .intro-contato-header-svg {
-  fill: rgba(224, 88, 72, 0.5);
-}
-
-.intro-contato-header-link {
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-@-webkit-keyframes barra {
-  from {
-    width: 0%;
+@-webkit-keyframes piscando {
+  0% {
+    opacity: 0;
   }
-  to {
-    width: 100%;
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-@keyframes barra {
-  from {
-    width: 0%;
+@keyframes piscando {
+  0% {
+    opacity: 0;
   }
-  to {
-    width: 100%;
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -698,87 +621,6 @@ body {
 /* Media Querys */
 /* Configs fixas */
 .efeitoFooter {
-  opacity: 1;
-}
-
-.efeitoDiv {
-  display: none;
-}
-
-.efeito-sobre-alvo {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-  opacity: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.efeitoSobreAtivo {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  opacity: 1;
-}
-
-.efeito-trabalho-alvo {
-  opacity: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-.efeito-trabalho-alvo-a {
-  -webkit-transform: translateX(50px);
-          transform: translateX(50px);
-}
-
-.efeito-trabalho-alvo-b {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-}
-
-.efeitoTrabalhoAtivo {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
-}
-
-.efeito-habilidades-alvo {
-  opacity: 0;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-  -webkit-transition: all 1s cubic-bezier(0.25, 0.25, 0.23, 1.405);
-  transition: all 1s cubic-bezier(0.25, 0.25, 0.23, 1.405);
-}
-
-.efeitoHabilidadesAtivo {
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  opacity: 1;
-}
-
-.efeito-contato-alvo {
-  opacity: 0;
-  -webkit-transition: all 1s cubic-bezier(0.25, 0.25, 0.23, 1.405);
-  transition: all 1s cubic-bezier(0.25, 0.25, 0.23, 1.405);
-}
-
-.efeito-contato-alvo-a {
-  -webkit-transform: translateY(-50px);
-          transform: translateY(-50px);
-}
-
-.efeito-contato-alvo-b {
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
-}
-
-.efeito-contato-alvo-c {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
-}
-
-.efeitoContatoAtivo {
-  -webkit-transform: translateY(0) scale(1);
-          transform: translateY(0) scale(1);
   opacity: 1;
 }
 

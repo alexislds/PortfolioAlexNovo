@@ -1,105 +1,58 @@
-efeitoIntro();
+efeitoType();
 
-function efeitoIntro(){
-  var $intro           = document.querySelector('.intro');
-  var $introDiv        = $intro.querySelectorAll('.intro-div');
-  var $sobreAlvo       = $intro.querySelectorAll('.efeito-sobre-alvo');
-  var $trabalhoAlvo    = $intro.querySelectorAll('.efeito-trabalho-alvo');
-  var $habilidadesAlvo = $intro.querySelectorAll('.efeito-habilidades-alvo');
-  var $contatoAlvo     = $intro.querySelectorAll('.efeito-contato-alvo');
-  var turno            = 0;
+function efeitoType() {
+  var $intro         = document.querySelector('.intro');
+  var $introTexto    = $intro.querySelectorAll('.intro-header-texto');
+  var textoNovo      = '';
+  var contadorLetras = 0;
+  var contadorTexto  = 0;
 
-  comportamentoDiv($introDiv, turno);
-  comportamentoSobre($sobreAlvo, turno);
+  var texto;
+  var textoDividido;
+
+  pegaLetras();
+  escreveTexto();
+
+  function pegaLetras() {
+    texto = $introTexto[contadorTexto].textContent.trim();
+    textoDividido = texto.split('');
+  }
 
 
-  var intervalAnimacao = setInterval(function(){
-    turno++;
-    comportamentoDiv($introDiv, turno);
-    comportamentoTrabalho($trabalhoAlvo, turno);
-    comportamentoHabilidas($habilidadesAlvo, turno);
-    comportamentoContato($contatoAlvo, turno);
+  function escreveTexto() {
+    var intervalo = setInterval(function(){
 
-    if (turno == 4){
-      clearInterval(intervalAnimacao);
+      textoNovo = textoNovo + textoDividido[contadorLetras];
+      contadorLetras++;
+      poeTexto();
+
+      if (contadorTexto == $introTexto.length - 1 && contadorLetras == texto.length) {
+        clearInterval(intervalo);
+      }
+
+      if (contadorLetras == texto.length && contadorTexto < $introTexto.length - 1) {
+
+        contadorTexto++;
+        contadorLetras = 0;
+        textoNovo = '';
+
+        setTimeout(function(){
+          pegaLetras();
+          escreveTexto();
+        }, 2000);
+
+        clearInterval(intervalo);
+      }
+    }, 140);
+  }
+
+
+  function poeTexto() {
+    if (contadorTexto > 0) {
+      $introTexto[contadorTexto - 1].classList.add('invisivel');
     }
-  }, 5000);
-}
 
-function comportamentoDiv(alvo, turno){
-  switch (turno) {
-    case 0:
-      alvo[turno].classList.remove('efeitoDiv');
-      break;
-    case 1:
-      alvo[turno - 1].classList.add('efeitoDiv');
-      alvo[turno].classList.remove('efeitoDiv');
-      break;
-    case 2:
-      alvo[turno - 1].classList.add('efeitoDiv');
-      alvo[turno].classList.remove('efeitoDiv');
-      break;
-    case 3:
-      alvo[turno - 1].classList.add('efeitoDiv');
-      alvo[turno].classList.remove('efeitoDiv');
-      break;
-    default:
-      break;
-  }
-}
-function comportamentoSobre(alvo, turno){
-  if (turno == 0) {
-    var target = 0;
-
-    var intervalSobre = setInterval(function(){
-      alvo[target].classList.add('efeitoSobreAtivo');
-      target++;
-
-      if(target == alvo.length) {
-        clearInterval(intervalSobre);
-      }
-    },500);
-  }
-}
-function comportamentoTrabalho(alvo, turno){
-  if (turno == 1) {
-    var target = 0;
-
-    var intervalSobre = setInterval(function(){
-      alvo[target].classList.add('efeitoTrabalhoAtivo');
-      target++;
-
-      if(target == alvo.length) {
-        clearInterval(intervalSobre);
-      }
-    },500);
-  }
-}
-function comportamentoHabilidas(alvo, turno){
-  if (turno == 2) {
-    var target = 0;
-
-    var intervalSobre = setInterval(function(){
-      alvo[target].classList.add('efeitoHabilidadesAtivo');
-      target++;
-
-      if(target == alvo.length) {
-        clearInterval(intervalSobre);
-      }
-    },1500/(alvo.length-1));
-  }
-}
-function comportamentoContato(alvo, turno){
-  if (turno == 3) {
-    var target = 0;
-
-    var intervalSobre = setInterval(function(){
-      alvo[target].classList.add('efeitoContatoAtivo');
-      target++;
-
-      if(target == alvo.length) {
-        clearInterval(intervalSobre);
-      }
-    },1500/(alvo.length-1));
+    $introTexto[contadorTexto].classList.remove('invisivel');
+    $introTexto[contadorTexto].textContent = textoNovo;
   }
 }
