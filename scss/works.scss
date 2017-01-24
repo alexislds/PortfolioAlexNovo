@@ -1,7 +1,7 @@
 @import 'utilitarios';
 
 .works{
-  display:inline-block; padding:50px 0; width:100%;
+  background-color:#272727; display:inline-block; padding:50px 0; width:100%;
 
   &-limite{
     @include desktop  {height:100%; margin:0 auto; max-width:884px; overflow:hidden; width:100%;}

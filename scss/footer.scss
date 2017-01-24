@@ -1,5 +1,5 @@
 @import 'utilitarios';
 
 .footer{
-  align-items:center; background-color:rgba($branco, .8); bottom:0; color:$preto; display:flex; font-family:$fonteB; font-size:12px; font-variant:small-caps; height:50px; justify-content:space-between; left:0; opacity:0; padding:0 20px; position:absolute; text-transform:lowercase; transition:all 1s; width:100%; z-index:1;
+  align-items:center; bottom:0; color:$preto; display:flex; font-family:$fonteB; font-size:12px; font-variant:small-caps; height:50px; justify-content:space-between; left:0; opacity:0; padding:0 20px; position:absolute; text-transform:lowercase; transition:all 1s; width:100%; z-index:1;
 }
