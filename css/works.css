@@ -71,6 +71,7 @@
   background: #F0F1F3;
   border: 1px solid #E9ECEF;
   border-radius: 5px 5px 3px 3px;
+  box-shadow: 10px 10px 13px 0px rgba(17, 17, 17, 0.75);
   display: inline-block;
   height: 235px;
   margin: 20px;

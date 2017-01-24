@@ -14,7 +14,7 @@
   &-lista{
     align-items:center; display:flex; flex-wrap:wrap; height:100%; justify-content:center; width:100%;
 
-    &-item{background:#F0F1F3; border:1px solid #E9ECEF; border-radius:5px 5px 3px 3px; display:inline-block; height:235px; margin:20px; opacity:0; padding:24px 5px 5px; position:relative; transform:scale(0.6); transition:opacity 900ms, transform 700ms; width:402px;}
+    &-item{background:#F0F1F3; border:1px solid #E9ECEF; border-radius:5px 5px 3px 3px; box-shadow:10px 10px 13px 0px rgba($preto, .75); display:inline-block; height:235px; margin:20px; opacity:0; padding:24px 5px 5px; position:relative; transform:scale(0.6); transition:opacity 900ms, transform 700ms; width:402px;}
 
     &-link              {display:inline-block; height:100%; position:relative; width:100%;}
     &-link::after      {background:linear-gradient(to bottom, rgba($corA, .2), rgba($corA, .2)), linear-gradient(rgba($corD, .2), rgba($corD, .2)), linear-gradient(rgba($corC, .2), rgba($corC, .2)), linear-gradient(rgba($corB, .2), rgba($corB, .2)); background-position:left top, left bottom, left center, right center; background-repeat:no-repeat; background-size:100% 0%, 100% 0%, 0% 100%, 0% 100%; content:''; height:100%; left:0; position:absolute; top:0; width:100%;}
