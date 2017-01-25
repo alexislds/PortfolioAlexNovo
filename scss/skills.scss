@@ -5,6 +5,8 @@
 
   &-limite{display:flex; flex-direction:column;}
 
+  &-header{display:flex; flex-direction:column; margin-bottom:50px; text-align:center;}
+
   &-lista{
     display:flex; flex:1; justify-content:space-around; width:100%;
 
@@ -22,7 +24,4 @@
 
     &-texto{background:linear-gradient(to left, transparent, #ddd, #ddd, transparent) no-repeat center top / 100% 1px; color:$preto; font-family:$fonteA; font-weight:normal; letter-spacing:1px; padding-top:11px; text-align:center;}
   }
-
-  &-header{display:flex; flex-direction:column; margin-bottom:30px; text-align:center;}
-
 }

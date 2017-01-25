@@ -30,13 +30,13 @@ h4 {font-size: 1.333em;}
 
 /* Titulos */
 .titulos-a,
-.subtitulos-a{color:$preto; display:inline-block; font-family:$fonteC; font-variant:small-caps;}
+.subtitulos-a{color:$preto; display:inline-block; font-family:$fonteA; font-variant:small-caps; letter-spacing:1px;}
 
 .titulos-a{background:linear-gradient(to left, transparent, $preto, $preto, transparent) no-repeat center bottom / 100px 1px; margin-bottom:10px; padding-bottom:11px;}
 .subtitulo-a{}
 
 .titulos-b,
-.subtitulos-b{color:$branco; display:inline-block; font-family:$fonteC; font-variant:small-caps;}
+.subtitulos-b{color:$branco; display:inline-block; font-family:$fonteA; font-variant:small-caps; letter-spacing:1px;}
 
 .titulos-b{background:linear-gradient(to left, transparent, $branco, $branco, transparent) no-repeat center bottom / 100px 1px; margin-bottom:10px; padding-bottom:11px;}
 .subtitulo-b{}

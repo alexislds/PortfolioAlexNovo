@@ -153,8 +153,9 @@ h4 {
 .subtitulos-a {
   color: #111111;
   display: inline-block;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   font-variant: small-caps;
+  letter-spacing: 1px;
 }
 
 .titulos-a {
@@ -168,8 +169,9 @@ h4 {
 .subtitulos-b {
   color: #fefefe;
   display: inline-block;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   font-variant: small-caps;
+  letter-spacing: 1px;
 }
 
 .titulos-b {
@@ -201,7 +203,7 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   height: 100vh;
   position: relative;
   -webkit-transition: background-color 1s;
@@ -326,6 +328,18 @@ h4 {
           flex-direction: column;
 }
 
+.skills-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .skills-lista {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -395,24 +409,12 @@ h4 {
   text-align: center;
 }
 
-.skills-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
 .works {
-  background-color: #272727;
+  background-color: #303030;
   display: inline-block;
   min-height: 100vh;
   padding: 50px 0;
@@ -505,8 +507,8 @@ h4 {
 }
 
 .works-lista-link::after {
-  background: -webkit-linear-gradient(top, rgba(99, 182, 219, 0.2), rgba(99, 182, 219, 0.2)), -webkit-linear-gradient(rgba(48, 157, 207, 0.2), rgba(48, 157, 207, 0.2)), -webkit-linear-gradient(rgba(95, 206, 128, 0.2), rgba(95, 206, 128, 0.2)), -webkit-linear-gradient(rgba(209, 50, 169, 0.2), rgba(209, 50, 169, 0.2));
-  background: linear-gradient(to bottom, rgba(99, 182, 219, 0.2), rgba(99, 182, 219, 0.2)), linear-gradient(rgba(48, 157, 207, 0.2), rgba(48, 157, 207, 0.2)), linear-gradient(rgba(95, 206, 128, 0.2), rgba(95, 206, 128, 0.2)), linear-gradient(rgba(209, 50, 169, 0.2), rgba(209, 50, 169, 0.2));
+  background: -webkit-linear-gradient(top, rgba(48, 48, 48, 0.2), rgba(48, 48, 48, 0.2)), -webkit-linear-gradient(rgba(48, 48, 48, 0.2), rgba(48, 48, 48, 0.2)), -webkit-linear-gradient(rgba(48, 48, 48, 0.2), rgba(48, 48, 48, 0.2)), -webkit-linear-gradient(rgba(48, 48, 48, 0.2), rgba(48, 48, 48, 0.2));
+  background: linear-gradient(to bottom, rgba(48, 48, 48, 0.2), rgba(48, 48, 48, 0.2)), linear-gradient(rgba(48, 48, 48, 0.2), rgba(48, 48, 48, 0.2)), linear-gradient(rgba(48, 48, 48, 0.2), rgba(48, 48, 48, 0.2)), linear-gradient(rgba(48, 48, 48, 0.2), rgba(48, 48, 48, 0.2));
   background-position: left top, left bottom, left center, right center;
   background-repeat: no-repeat;
   background-size: 100% 0%, 100% 0%, 0% 100%, 0% 100%;
@@ -596,8 +598,9 @@ h4 {
 
 .works-lista-detalhes-texto {
   color: white;
-  font-family: "Raleway", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-variant: small-caps;
+  font-size: 14px;
   letter-spacing: 1px;
 }
 
@@ -635,7 +638,7 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -739,6 +742,7 @@ h4 {
   display: flex;
   font-family: "Ubuntu", sans-serif;
   font-variant: small-caps;
+  font-size: 12px;
   height: 50px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

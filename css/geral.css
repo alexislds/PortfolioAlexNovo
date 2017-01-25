@@ -93,8 +93,9 @@ h4 {
 .subtitulos-a {
   color: #111111;
   display: inline-block;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   font-variant: small-caps;
+  letter-spacing: 1px;
 }
 
 .titulos-a {
@@ -108,8 +109,9 @@ h4 {
 .subtitulos-b {
   color: #fefefe;
   display: inline-block;
-  font-family: "Raleway", sans-serif;
+  font-family: "Lato", sans-serif;
   font-variant: small-caps;
+  letter-spacing: 1px;
 }
 
 .titulos-b {
