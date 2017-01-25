@@ -1,18 +1,24 @@
-mostraPortfolio();
-
+window.addEventListener('scroll', mostraPortfolio);
 
 function mostraPortfolio(){
   var $works     = document.querySelector('.works');
   var $worksItem = $works.querySelectorAll('.works-lista-item');
-  var contador   = 0;
 
-  var intervalo = setInterval(function(){
-    $worksItem[contador].classList.add('visivel', 'cresceu');
+  var worksTop    = $works.getBoundingClientRect().top;
+  var worksHeight = $works.getBoundingClientRect().height;
+  var ativar      = worksTop - (worksHeight / 2);
 
-    if (contador == $worksItem.length - 1) {
-      clearInterval(intervalo);
-    }
+  if (ativar <= 0) {
+    var contador = 0;
 
-    contador++;
-  }, 200);
+    var intervalo = setInterval(function(){
+      $worksItem[contador].classList.add('visivel', 'cresceu');
+
+      if (contador == $worksItem.length - 1) {
+        clearInterval(intervalo);
+      }
+
+      contador++;
+    }, 200);
+  }
 }
