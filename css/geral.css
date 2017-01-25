@@ -2,6 +2,23 @@
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
+@media (max-width: 640px) {
+  .limite {
+    height: 100%;
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .limite {
+    height: 100%;
+    overflow: hidden;
+    padding: 40px;
+  }
+}
+
 @media (min-width: 1025px) and (max-width: 1440px) {
   .limite {
     height: 100%;

@@ -5,6 +5,7 @@
 .works {
   background-color: #272727;
   display: inline-block;
+  min-height: 100vh;
   padding: 50px 0;
   width: 100%;
 }
