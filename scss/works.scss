@@ -35,7 +35,7 @@
     &-detalhes{
       align-items:center; display:flex; flex-direction:column; height:100%; justify-content:space-between; left:0; opacity:0; padding:15px 0; position:absolute; top:0; width:100%; z-index:1;
 
-      &-texto {color:white; font-family:$fonteC; font-size:13px; font-variant:small-caps; letter-spacing:1px;}
+      &-texto {color:white; font-family:$fonteC; font-variant:small-caps; letter-spacing:1px;}
       &-nome  {}
       &-skills{}
     }

@@ -3,10 +3,6 @@
 .intro{
   align-items:center; background:linear-gradient(45deg, $corA, $corC) no-repeat left top / 100% 100%; color:white; display:flex; flex-direction:column; font-family:$fonteC; height:100vh; position:relative; transition:background-color 1s; width:100%;
 
-  h1{font-size:3vw;}
-  h2{font-size:3vw;}
-  p{font-size:1.4vw;}
-
   &-limite{align-items:center; display:flex; justify-content:center;}
 
   &-header{

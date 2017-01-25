@@ -2,6 +2,12 @@
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
+/* TAGS */
+body {
+  position: relative;
+}
+
+/* DIV LIMITE */
 @media (max-width: 640px) {
   .limite {
     height: 100%;
@@ -49,6 +55,40 @@
   }
 }
 
+/* FONT-SIZE */
+html {
+  font-size: 16px;
+}
+
+@media (min-width: 800px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+h1 {
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+/* Titulos */
 .titulos-a,
 .subtitulos-a {
   color: #111111;
@@ -60,13 +100,8 @@
 .titulos-a {
   background: -webkit-linear-gradient(right, transparent, #111111, #111111, transparent) no-repeat center bottom/100px 1px;
   background: linear-gradient(to left, transparent, #111111, #111111, transparent) no-repeat center bottom/100px 1px;
-  font-size: 1.2vw;
   margin-bottom: 10px;
   padding-bottom: 11px;
-}
-
-.subtitulo-a {
-  font-size: 0.6vw;
 }
 
 .titulos-b,
@@ -80,15 +115,6 @@
 .titulos-b {
   background: -webkit-linear-gradient(right, transparent, #fefefe, #fefefe, transparent) no-repeat center bottom/100px 1px;
   background: linear-gradient(to left, transparent, #fefefe, #fefefe, transparent) no-repeat center bottom/100px 1px;
-  font-size: 1.2vw;
   margin-bottom: 10px;
   padding-bottom: 11px;
-}
-
-.subtitulo-b {
-  font-size: 0.6vw;
-}
-
-body {
-  position: relative;
 }
