@@ -6,8 +6,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-linear-gradient(45deg, #E14658, #3F3250) no-repeat left top/100% 100%;
-  background: linear-gradient(45deg, #E14658, #3F3250) no-repeat left top/100% 100%;
+  background: -webkit-linear-gradient(315deg, #63b6db, #d132a9) no-repeat left top/100% 100%;
+  background: linear-gradient(135deg, #63b6db, #d132a9) no-repeat left top/100% 100%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -24,6 +24,19 @@
   width: 100%;
 }
 
+.intro::before {
+  -webkit-animation: pulse 10s infinite;
+          animation: pulse 10s infinite;
+  background: -webkit-linear-gradient(315deg, #5fce80, #309dcf) no-repeat left top/100% 100%;
+  background: linear-gradient(135deg, #5fce80, #309dcf) no-repeat left top/100% 100%;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .intro-limite {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -34,6 +47,10 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.intro-header {
+  z-index: 1;
 }
 
 .intro-header .invisivel {
@@ -76,5 +93,29 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

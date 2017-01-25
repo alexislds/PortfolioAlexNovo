@@ -191,8 +191,8 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-linear-gradient(45deg, #E14658, #3F3250) no-repeat left top/100% 100%;
-  background: linear-gradient(45deg, #E14658, #3F3250) no-repeat left top/100% 100%;
+  background: -webkit-linear-gradient(315deg, #63b6db, #d132a9) no-repeat left top/100% 100%;
+  background: linear-gradient(135deg, #63b6db, #d132a9) no-repeat left top/100% 100%;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,6 +209,19 @@ h4 {
   width: 100%;
 }
 
+.intro::before {
+  -webkit-animation: pulse 10s infinite;
+          animation: pulse 10s infinite;
+  background: -webkit-linear-gradient(315deg, #5fce80, #309dcf) no-repeat left top/100% 100%;
+  background: linear-gradient(135deg, #5fce80, #309dcf) no-repeat left top/100% 100%;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 .intro-limite {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -219,6 +232,10 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.intro-header {
+  z-index: 1;
 }
 
 .intro-header .invisivel {
@@ -261,6 +278,30 @@ h4 {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -464,8 +505,8 @@ h4 {
 }
 
 .works-lista-link::after {
-  background: -webkit-linear-gradient(top, rgba(225, 70, 88, 0.2), rgba(225, 70, 88, 0.2)), -webkit-linear-gradient(rgba(192, 179, 160, 0.2), rgba(192, 179, 160, 0.2)), -webkit-linear-gradient(rgba(63, 50, 80, 0.2), rgba(63, 50, 80, 0.2)), -webkit-linear-gradient(rgba(34, 37, 44, 0.2), rgba(34, 37, 44, 0.2));
-  background: linear-gradient(to bottom, rgba(225, 70, 88, 0.2), rgba(225, 70, 88, 0.2)), linear-gradient(rgba(192, 179, 160, 0.2), rgba(192, 179, 160, 0.2)), linear-gradient(rgba(63, 50, 80, 0.2), rgba(63, 50, 80, 0.2)), linear-gradient(rgba(34, 37, 44, 0.2), rgba(34, 37, 44, 0.2));
+  background: -webkit-linear-gradient(top, rgba(99, 182, 219, 0.2), rgba(99, 182, 219, 0.2)), -webkit-linear-gradient(rgba(48, 157, 207, 0.2), rgba(48, 157, 207, 0.2)), -webkit-linear-gradient(rgba(95, 206, 128, 0.2), rgba(95, 206, 128, 0.2)), -webkit-linear-gradient(rgba(209, 50, 169, 0.2), rgba(209, 50, 169, 0.2));
+  background: linear-gradient(to bottom, rgba(99, 182, 219, 0.2), rgba(99, 182, 219, 0.2)), linear-gradient(rgba(48, 157, 207, 0.2), rgba(48, 157, 207, 0.2)), linear-gradient(rgba(95, 206, 128, 0.2), rgba(95, 206, 128, 0.2)), linear-gradient(rgba(209, 50, 169, 0.2), rgba(209, 50, 169, 0.2));
   background-position: left top, left bottom, left center, right center;
   background-repeat: no-repeat;
   background-size: 100% 0%, 100% 0%, 0% 100%, 0% 100%;
