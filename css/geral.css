@@ -90,33 +90,85 @@ h4 {
 
 /* Titulos */
 .titulos-a,
-.subtitulos-a {
-  color: #111111;
+.subtitulo-a,
+.titulos-b,
+.subtitulo-b,
+.titulos-separador {
+  margin-bottom: 10px;
+}
+
+.titulos-a,
+.subtitulos-a,
+.titulos-b,
+.subtitulos-b {
   display: inline-block;
   font-family: "Lato", sans-serif;
   font-variant: small-caps;
   letter-spacing: 1px;
 }
 
-.titulos-a {
-  background: -webkit-linear-gradient(right, transparent, #111111, #111111, transparent) no-repeat center bottom/100px 1px;
-  background: linear-gradient(to left, transparent, #111111, #111111, transparent) no-repeat center bottom/100px 1px;
-  margin-bottom: 10px;
-  padding-bottom: 11px;
+.titulos-a,
+.subtitulos-a {
+  color: #111111;
 }
 
 .titulos-b,
 .subtitulos-b {
   color: #fefefe;
-  display: inline-block;
-  font-family: "Lato", sans-serif;
-  font-variant: small-caps;
-  letter-spacing: 1px;
 }
 
+.titulos-separador-a,
+.titulos-separador-b {
+  height: 20px;
+  margin: 0 auto;
+  -webkit-transition: background-size 1s;
+  transition: background-size 1s;
+  width: 140px;
+}
+
+.titulos-separador-a {
+  background: -webkit-linear-gradient(left, transparent, #111111, transparent) no-repeat center/0px 1px;
+  background: linear-gradient(to right, transparent, #111111, transparent) no-repeat center/0px 1px;
+}
+
+.titulos-separador-b {
+  background: -webkit-linear-gradient(left, transparent, #fefefe, transparent) no-repeat center/0px 1px;
+  background: linear-gradient(to right, transparent, #fefefe, transparent) no-repeat center/0px 1px;
+}
+
+.ativo .titulos-separador-a,
+.ativo .titulos-separador-b {
+  background-size: 140px 1px;
+}
+
+/* Titulos efeito */
+.titulos-a,
 .titulos-b {
-  background: -webkit-linear-gradient(right, transparent, #fefefe, #fefefe, transparent) no-repeat center bottom/100px 1px;
-  background: linear-gradient(to left, transparent, #fefefe, #fefefe, transparent) no-repeat center bottom/100px 1px;
-  margin-bottom: 10px;
-  padding-bottom: 11px;
+  opacity: 0;
+  -webkit-transform: translateX(100px);
+          transform: translateX(100px);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.subtitulos-a,
+.subtitulos-b {
+  opacity: 0;
+  -webkit-transform: translateX(-100px);
+          transform: translateX(-100px);
+  -webkit-transition: opacity 1s, -webkit-transform 1s;
+  transition: opacity 1s, -webkit-transform 1s;
+  transition: transform 1s, opacity 1s;
+  transition: transform 1s, opacity 1s, -webkit-transform 1s;
+}
+
+.ativo .titulos-a,
+.ativo .titulos-b,
+.ativo .subtitulos-a,
+.ativo .subtitulos-b {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }

@@ -2,6 +2,19 @@ var $skills = document.querySelector('.skills');
 var $skillsItem = $skills.querySelectorAll('.skills-lista-item');
 
 window.addEventListener('scroll', skillsAtivar);
+window.addEventListener('scroll', efeitoHeaders);
+
+function efeitoHeaders(){
+  var $skillsHeader = $skills.querySelector('.skills-header');
+
+  var headersTop    = $skillsHeader.getBoundingClientRect().top;
+  var headersHeight = window.innerHeight;
+  var ativar      = headersTop - (headersHeight / 2);
+
+  if (ativar <= 0) {
+    $skillsHeader.classList.add('ativo');
+  }
+}
 
 function skillsAtivar(){
   var rectSkills = $skills.getBoundingClientRect().top;

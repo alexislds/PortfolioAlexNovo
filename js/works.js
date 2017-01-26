@@ -1,4 +1,17 @@
 window.addEventListener('scroll', mostraPortfolio);
+window.addEventListener('scroll', efeitoHeaders);
+
+function efeitoHeaders(){
+  var $worksHeader = document.querySelector('.works-header');
+
+  var headersTop    = $worksHeader.getBoundingClientRect().top;
+  var headersHeight = window.innerHeight;
+  var ativar      = headersTop - (headersHeight / 2);
+
+  if (ativar <= 0) {
+    $worksHeader.classList.add('ativo');
+  }
+}
 
 function mostraPortfolio(){
   var $works     = document.querySelector('.works');
