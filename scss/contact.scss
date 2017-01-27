@@ -33,12 +33,13 @@
   }
 
   &-lista{
-    margin-top:30px; text-align:center;
+    margin-top:200px; text-align:center;
 
-    &-item                    {display:inline-block; height:40px; position:relative; width:40px;}
-    &-item:not(:first-of-type){margin-left:10px;}
+    &-item                    {background:rgba(#303030, .05); border-radius:5px; display:inline-block; padding:5px 8px; position:relative; transition:all 300ms;}
+    &-item:hover              {background:rgba(#303030, .1);}
+    &-item:not(:first-of-type){margin-left:20px;}
 
-    &-link{@include mascara;}
-    &-svg{@include mascara; fill:$branco;}
+    &-link{}
+    &-icon{color:#303030; font-size:2em;}
   }
 }

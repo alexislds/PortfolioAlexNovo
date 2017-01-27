@@ -81,36 +81,29 @@
 }
 
 .contact-lista {
-  margin-top: 30px;
+  margin-top: 200px;
   text-align: center;
 }
 
 .contact-lista-item {
+  background: rgba(48, 48, 48, 0.05);
+  border-radius: 5px;
   display: inline-block;
-  height: 40px;
+  padding: 5px 8px;
   position: relative;
-  width: 40px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.contact-lista-item:hover {
+  background: rgba(48, 48, 48, 0.1);
 }
 
 .contact-lista-item:not(:first-of-type) {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
-.contact-lista-link {
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.contact-lista-svg {
-  display: inline-block;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  fill: #fefefe;
+.contact-lista-icon {
+  color: #303030;
+  font-size: 2em;
 }
