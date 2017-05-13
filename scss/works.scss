@@ -3,12 +3,6 @@
 .works{
   background-color:#303030; display:inline-block; min-height:100vh; padding:50px 0; width:100%;
 
-  &-limite{
-    @include desktop  {height:100%; margin:0 auto; max-width:884px; overflow:hidden; width:100%;}
-    @include monitor  {height:100%; margin:0 auto; max-width:1326px; overflow:hidden; width:100%;}
-    @include ultrawide{height:100%; margin:0 auto; max-width:1768px; overflow:hidden; width:100%;}
-  }
-
   &-header{display:flex; flex-direction:column; margin-bottom:30px; text-align:center;}
 
   &-lista{
@@ -17,7 +11,7 @@
     &-item{background:#F0F1F3; border:1px solid #E9ECEF; border-radius:5px 5px 3px 3px; box-shadow:10px 10px 13px 0px rgba($preto, .75); display:inline-block; height:235px; margin:20px; opacity:0; padding:24px 5px 5px; position:relative; transform:scale(0.6); transition:opacity 900ms, transform 700ms; width:402px;}
 
     &-link              {display:inline-block; height:100%; position:relative; width:100%;}
-    &-link::after      {background:linear-gradient(to bottom, rgba(#303030, .2), rgba(#303030, .2)), linear-gradient(rgba(#303030, .2), rgba(#303030, .2)), linear-gradient(rgba(#303030, .2), rgba(#303030, .2)), linear-gradient(rgba(#303030, .2), rgba(#303030, .2)); background-position:left top, left bottom, left center, right center; background-repeat:no-repeat; background-size:100% 0%, 100% 0%, 0% 100%, 0% 100%; content:''; height:100%; left:0; position:absolute; top:0; width:100%;}
+    &-link::after      {background:linear-gradient(to bottom, rgba(#303030, .2), rgba(#303030, .2)), linear-gradient(rgba(#303030, .2), rgba(#303030, .2)), linear-gradient(rgba(#303030, .2), rgba(#303030, .2)), linear-gradient(rgba(#303030, .2), rgba(#303030, .2)); background-position:left top, left bottom, right top, right bottom; background-repeat:no-repeat; background-size:100% 0%, 0% 100%, 0% 100%, 100% 0%; content:''; height:100%; left:0; position:absolute; top:0; width:100%;}
     &-link:hover::after{background-size:100% 100%; transition:background-size 700ms 200ms;}
     &-link:hover &-img {filter:blur(2px);}
 

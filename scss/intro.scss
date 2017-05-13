@@ -13,10 +13,22 @@
     .invisivel{display:none;}
 
     &-texto,
-    &-barra{display:inline-block;}
+    &-barra{font-size:$fonteH1; display:inline-block; text-align:center;}
 
     &-barra{animation:piscando 900ms infinite;}
   }
+}
+
+@include smartphone {
+  .intro-header-texto{font-size:$fonteH4;}
+}
+
+@include tablet {
+  .intro-header-texto{font-size:$fonteH3;}
+}
+
+@include desktop {
+  .intro-header-texto{font-size:$fonteH2;}
 }
 
 @keyframes piscando {

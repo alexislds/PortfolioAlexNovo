@@ -12,7 +12,7 @@ body {
   .limite {
     height: 100%;
     overflow: hidden;
-    padding: 20px;
+    padding: 0px 20px;
     width: 100%;
   }
 }
@@ -21,7 +21,8 @@ body {
   .limite {
     height: 100%;
     overflow: hidden;
-    padding: 40px;
+    padding: 0px 20px;
+    width: 100%;
   }
 }
 
@@ -60,32 +61,16 @@ html {
   font-size: 16px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 641px) and (max-width: 1024px) {
   html {
     font-size: 18px;
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1024px) {
   html {
     font-size: 20px;
   }
-}
-
-h1 {
-  font-size: 3.157em;
-}
-
-h2 {
-  font-size: 2.369em;
-}
-
-h3 {
-  font-size: 1.777em;
-}
-
-h4 {
-  font-size: 1.333em;
 }
 
 /* Titulos */
@@ -109,11 +94,13 @@ h4 {
 
 .titulos-a,
 .subtitulos-a {
+  font-size: 1.333em;
   color: #111111;
 }
 
 .titulos-b,
 .subtitulos-b {
+  font-size: 1.333em;
   color: #fefefe;
 }
 
@@ -139,6 +126,24 @@ h4 {
 .ativo .titulos-separador-a,
 .ativo .titulos-separador-b {
   background-size: 140px 1px;
+}
+
+@media (max-width: 640px) {
+  .titulos-a,
+  .subtitulos-a,
+  .titulos-b,
+  .subtitulos-b {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .titulos-a,
+  .subtitulos-a,
+  .titulos-b,
+  .subtitulos-b {
+    font-size: 1em;
+  }
 }
 
 /* Titulos efeito */

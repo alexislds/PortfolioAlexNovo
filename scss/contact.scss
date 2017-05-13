@@ -43,3 +43,12 @@
     &-icon{color:#303030; font-size:2em;}
   }
 }
+
+@include smartphone-tablet{
+  .contact-formulario{
+    &-nome,
+    &-email{float:none; width:100%;}
+
+    &-email{margin-top:20px;}
+  }
+}

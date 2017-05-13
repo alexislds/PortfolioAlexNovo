@@ -58,12 +58,32 @@
 }
 
 .intro-header-texto, .intro-header-barra {
+  font-size: 3.157em;
   display: inline-block;
+  text-align: center;
 }
 
 .intro-header-barra {
   -webkit-animation: piscando 900ms infinite;
           animation: piscando 900ms infinite;
+}
+
+@media (max-width: 640px) {
+  .intro-header-texto {
+    font-size: 1.333em;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .intro-header-texto {
+    font-size: 1.777em;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .intro-header-texto {
+    font-size: 2.369em;
+  }
 }
 
 @-webkit-keyframes piscando {

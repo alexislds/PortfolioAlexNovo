@@ -5,8 +5,8 @@ body{position:relative;}
 
 /* DIV LIMITE */
 .limite{
-  @include smartphone{height:100%; overflow:hidden; padding:20px; width:100%;}
-  @include tablet{height:100%; overflow:hidden; padding:40px;}
+  @include smartphone{height:100%; overflow:hidden; padding:0px 20px; width:100%;}
+  @include tablet{height:100%; overflow:hidden; padding:0px 20px; width:100%;}
   @include desktop{height:100%; margin:0 auto; max-width:1000px; overflow:hidden; width:100%;}
   @include monitor{height:100%; margin:0 auto; max-width:1400px; overflow:hidden; width:100%;}
   @include ultrawide{height:100%; margin:0 auto; max-width:1600px; overflow:hidden; width:100%;}
@@ -15,18 +15,15 @@ body{position:relative;}
 /* FONT-SIZE */
 html {
   font-size: 16px;
-  @media (min-width: 800px) {
-    font-size: 18px;
+
+  @include tablet {
+    font-size:18px;
   }
-  @media (min-width: 1200px) {
-    font-size: 20px;
+
+  @include tablet {
+    font-size:20px;
   }
 }
-
-h1 {font-size: 3.157em;}
-h2 {font-size: 2.369em;}
-h3 {font-size: 1.777em;}
-h4 {font-size: 1.333em;}
 
 /* Titulos */
 .titulos-a,
@@ -41,10 +38,10 @@ h4 {font-size: 1.333em;}
 .subtitulos-b{display:inline-block; font-family:$fonteA; font-variant:small-caps; letter-spacing:1px;}
 
 .titulos-a,
-.subtitulos-a{color:$preto;}
+.subtitulos-a{font-size:$fonteH4; color:$preto;}
 
 .titulos-b,
-.subtitulos-b{color:$branco;}
+.subtitulos-b{font-size:$fonteH4; color:$branco;}
 
 .titulos-separador-a,
 .titulos-separador-b{height:20px; margin:0 auto; transition:background-size 1s; width:140px;}
@@ -54,6 +51,20 @@ h4 {font-size: 1.333em;}
 
 .ativo .titulos-separador-a,
 .ativo .titulos-separador-b{background-size:140px 1px;}
+
+@include smartphone {
+  .titulos-a,
+  .subtitulos-a,
+  .titulos-b,
+  .subtitulos-b{font-size:$fonteH5;}
+}
+
+@include tablet {
+  .titulos-a,
+  .subtitulos-a,
+  .titulos-b,
+  .subtitulos-b{font-size:$fonteH5;}
+}
 
 /* Titulos efeito */
 
