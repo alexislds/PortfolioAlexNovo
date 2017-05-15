@@ -282,18 +282,17 @@ html {
 }
 
 .intro-limite {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
 }
 
 .intro-header {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 1;
 }
 
@@ -313,19 +312,22 @@ html {
 }
 
 @media (max-width: 640px) {
-  .intro-header-texto {
+  .intro-header-texto,
+  .intro-header-barra {
     font-size: 1.333em;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
-  .intro-header-texto {
+  .intro-header-texto,
+  .intro-header-barra {
     font-size: 1.777em;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .intro-header-texto {
+  .intro-header-texto,
+  .intro-header-barra {
     font-size: 2.369em;
   }
 }
@@ -555,13 +557,20 @@ html {
   transition: opacity 500ms 700ms;
 }
 
+@media (max-width: 640px) {
+  .works-lista-item {
+    height: calc((100vw - 40px) / 1.710);
+    width: calc(100vw - 40px);
+  }
+}
+
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
 /* Configs fixas */
 .contact {
   min-height: 100vh;
-  padding: 50px 0;
+  padding: 50px 0 100px;
   width: 100%;
 }
 
@@ -675,6 +684,13 @@ html {
   }
 }
 
+@media (max-width: 640px) {
+  .contact-formulario-campos, .contact-formulario-mensagem, .contact-formulario-btn {
+    max-width: none;
+    width: 100%;
+  }
+}
+
 /* Variaveis */
 /* Mixins */
 /* Media Querys */
@@ -719,7 +735,14 @@ html {
 
 @media (max-width: 1024px) {
   .footer {
-    font-size: 11px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 10px;
+  }
+  .footer-texto:not(:first-of-type) {
+    margin-top: 5px;
   }
   .footer-copyright {
     display: none;

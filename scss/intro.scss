@@ -5,10 +5,10 @@
 
   &::before{animation:pulse 10s infinite; background:linear-gradient(135deg, $corC, $corD) no-repeat left top / 100% 100%; content:''; height:100%; left:0; position:absolute; top:0; width:100%;}
 
-  &-limite{align-items:center; display:flex; justify-content:center;}
+  &-limite{position:relative;}
 
   &-header{
-    z-index:1;
+    left:50%; position:absolute; text-align:center; top:50%; transform:translate(-50%, -50%); width:100%; z-index:1;
 
     .invisivel{display:none;}
 
@@ -20,15 +20,18 @@
 }
 
 @include smartphone {
-  .intro-header-texto{font-size:$fonteH4;}
+  .intro-header-texto,
+  .intro-header-barra{font-size:$fonteH4;}
 }
 
 @include tablet {
-  .intro-header-texto{font-size:$fonteH3;}
+  .intro-header-texto,
+  .intro-header-barra{font-size:$fonteH3;}
 }
 
 @include desktop {
-  .intro-header-texto{font-size:$fonteH2;}
+  .intro-header-texto,
+  .intro-header-barra{font-size:$fonteH2;}
 }
 
 @keyframes piscando {

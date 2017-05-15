@@ -168,3 +168,10 @@
   -webkit-transition: opacity 500ms 700ms;
   transition: opacity 500ms 700ms;
 }
+
+@media (max-width: 640px) {
+  .works-lista-item {
+    height: calc((100vw - 40px) / 1.710);
+    width: calc(100vw - 40px);
+  }
+}

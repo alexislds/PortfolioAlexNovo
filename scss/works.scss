@@ -36,3 +36,7 @@
     &-link:hover &-detalhes{opacity:1; transition:opacity 500ms 700ms; }
   }
 }
+
+@include smartphone{
+  .works-lista-item{height:calc((100vw - 40px) / 1.710); width:calc(100vw - 40px);}
+}

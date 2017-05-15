@@ -38,18 +38,17 @@
 }
 
 .intro-limite {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  position: relative;
 }
 
 .intro-header {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
   z-index: 1;
 }
 
@@ -69,19 +68,22 @@
 }
 
 @media (max-width: 640px) {
-  .intro-header-texto {
+  .intro-header-texto,
+  .intro-header-barra {
     font-size: 1.333em;
   }
 }
 
 @media (min-width: 641px) and (max-width: 1024px) {
-  .intro-header-texto {
+  .intro-header-texto,
+  .intro-header-barra {
     font-size: 1.777em;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
-  .intro-header-texto {
+  .intro-header-texto,
+  .intro-header-barra {
     font-size: 2.369em;
   }
 }

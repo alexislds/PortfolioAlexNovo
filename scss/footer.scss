@@ -12,8 +12,9 @@
 
 @include smartphone-tablet{
 	.footer{
-		font-size:11px;
+		flex-direction:column; font-size:10px;
 
+		&-texto:not(:first-of-type){margin-top:5px;}
 		&-copyright{display:none;}
 	}
 }
